@@ -1,24 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import Container from 'react-bootstrap/Container'
+import { Counter } from './Components/Counter'
+import { Toggle } from './Components/Toggle'
+import { Todo } from './Components/Todo'
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container className="border bg-light text-center">
+      <h1>My first React App</h1>
+
+       <Counter />
+       <Toggle />
+       <Todo />
+
+
+
+
+    </Container>
   );
 }
 
