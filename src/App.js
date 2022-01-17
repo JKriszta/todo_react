@@ -2,7 +2,8 @@ import './App.css';
 import Container from 'react-bootstrap/Container'
 import { Counter } from './Components/Counter'
 import { Toggle } from './Components/Toggle'
-import { Todo } from './Components/Todo'
+import { TodoList } from './Components/TodoList'
+import {data} from './data'
 
 
 function App() {
@@ -12,7 +13,7 @@ function App() {
 
        <Counter />
        <Toggle />
-       <Todo />
+       <TodoList data={data} />
 
 
 
